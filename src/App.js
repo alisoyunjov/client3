@@ -36,7 +36,7 @@ class App extends Component {
             <PrivateRoute path="/makeOrder" exact component={OrderInsert}/>
             <PrivateRoute path="/viewOrders" exact component={OrderList}/>
             <PrivateRoute path="/allOrders" exact component={CompanyOrders}/>
-            <PrivateRoute path="/vendors" exact component={Vendors}/>
+            <PrivateRoute path="/addVendors" exact component={Vendors}/>
             <PrivateRoute path="/order/:id" exact component={Update}/>
             <AdminRoute path="/vendors" exact component={Vendors}/>
             <AdminRoute path="/profile" exact component={Profile}/>
