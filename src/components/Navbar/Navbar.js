@@ -114,7 +114,7 @@ class Navbar extends Component {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/vendors" className="nav-link">
+              <Link to="/addVendors" className="nav-link">
                 <h5>Vendors</h5>
               </Link>
             </li>
