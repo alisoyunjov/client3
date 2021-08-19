@@ -201,18 +201,33 @@ class DownloadOrder extends Component {
                 `Do you want to download the order?`,
             )
         ) {
-            const result =  await axios.get(`${API_URL}/download/${this.props.id}`, {
-                responseType: 'blob'
-            });
-            const split = this.props.path.split('/');
-            const filename = split[split.length - 1];
-            const mimetype = this.props.mimetype;
-            download(result.data, filename, mimetype)
+            if (this.props.numOfFiles == 1){
+                const result =  await axios.get(`${API_URL}/downloadFiles/${this.props.id}`, {
+                    responseType: 'blob'
+                });
+                const downloadName = `${Date.now()}.pdf`;
+                download(result.data, downloadName, 'application/pdf');
+
+            }
+            else{
+                const result =  await axios.get(`${API_URL}/download/${this.props.id}`, {
+                    responseType: 'blob'
+                });
+                const downloadName = `${Date.now()}`;
+                download(result.data, downloadName, 'application/octet-stream');
+            }
+
         }
     }
 
     render() {
-        return <Download onClick={this.downloadOrder}>Download</Download>
+        if (this.props.numOfFiles == 0){        
+            return <Delete >No File</Delete>
+        }
+        else{
+            return <Download onClick={this.downloadOrder}>Download</Download>
+        }
+        
     }
 }
 
