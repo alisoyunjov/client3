@@ -2,9 +2,9 @@ import axios from 'axios'
 import authHeader from '../../services/auth-header';
 import authService from '../../services/authService';
 const api = axios.create({
-    baseURL: 'http://localhost:8082/api/orders',
+    baseURL: 'http://18.167.118.133:8082/api/orders',
 })
-const baseURL = 'http://localhost:8082/api/orders';
+const baseURL = 'http://18.167.118.133:8082/api/orders';
 
 export const insertOrder = payload => axios.post(baseURL + "/", payload, {headers: authHeader()});
 export const getAllOrders = () => api.get(`/`);
