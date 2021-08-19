@@ -3,7 +3,7 @@ import authHeader from '../../services/auth-header';
 import authService from '../../services/authService';
 
 const api = axios.create({
-    baseURL: 'http://localhost:8082/api/vendors/',
+    baseURL: 'http://18.167.118.133:8082/api/vendors/',
 })
 
 
