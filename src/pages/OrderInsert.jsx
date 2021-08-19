@@ -48,7 +48,7 @@ const File = (props) => {
   useEffect(() => {
     const getFilesList = async () => {
       try {
-        const { data } = await axios.get('http://localhost:8082/api/vendors/allVendors');
+        const { data } = await axios.get('http://18.167.118.133:8082/api/vendors/allVendors');
         setErrorMsg('');
         setVendorList(data.data);
       } catch (error) {
