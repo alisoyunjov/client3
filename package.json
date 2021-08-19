@@ -1,0 +1,73 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/data-grid": "^4.0.0-alpha.35",
+    "@material-ui/icons": "^4.11.2",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "axios": "^0.21.1",
+    "b64-to-blob": "^1.2.19",
+    "bootstrap": "^4.6.0",
+    "dateformat": "^4.5.1",
+    "downloadjs": "^1.4.7",
+    "export-to-csv": "^0.2.1",
+    "file-saver": "^2.0.5",
+    "formik": "^2.2.6",
+    "framer-motion": "^4.0.3",
+    "multer": "^1.4.2",
+    "react": "^17.0.1",
+    "react-bootstrap": "^1.5.2",
+    "react-bootstrap-form": "^0.1.4-beta6",
+    "react-csv": "^2.0.3",
+    "react-data-component": "^1.0.1",
+    "react-data-table-component": "^6.11.7",
+    "react-dom": "^17.0.1",
+    "react-dropdown": "^1.9.2",
+    "react-dropzone": "^11.3.4",
+    "react-flatpickr": "^3.10.7",
+    "react-icons": "^4.2.0",
+    "react-inputs-validation": "^4.8.3",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-spring": "^9.1.1",
+    "react-swipeable-views": "^0.13.9",
+    "react-table": "^7.7.0",
+    "react-table-6": "^6.11.0",
+    "reactstrap": "^8.9.0",
+    "sass": "^1.37.5",
+    "styled-components": "^5.2.3",
+    "web-vitals": "^1.0.1",
+    "yup": "^0.32.9"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "eslint-plugin-jest": "^24.3.2"
+  }
+}
